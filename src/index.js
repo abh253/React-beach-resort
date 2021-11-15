@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {RoomProvider} from './Context'
 
 ReactDOM.render(
   <React.StrictMode>
+    <RoomProvider>
     <App />
+    </RoomProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
